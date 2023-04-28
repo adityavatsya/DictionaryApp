@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Akaya Telivigala", cursive;
+}
+html,body
+{
+  height: 100%;
+}
+.container {
+  text-align: center;
+  max-width: 110%;
+  margin: 0 auto;
+}
+nav {
+  background: #6DA9E4;
+}
+h1 {
+  font-family: 'Crimson Text', serif;
+  font-size: 340%;
+  height: 0px;
+}
+/* //padding from nav bar to actual content */
+section.input {
+  padding-top: -20px;
+}
+h2 {
+  font-family: 'Crimson Text', serif;
+  text-align: center;
+  font-size: 36px;
+}
+h4 {
+  font-family: "Akaya Telivigala", cursive;
+}
+.form {
+  display: flex;
+  justify-content: center;
+}
+.input {
+  margin-top: 20px;
+}
+#input {
+  border: 2px solid black;
+  padding: 10px;
+  font-size: 16px;
+  min-width: 500px;
+  outline: none;
+  border-radius: 20px;
+}
+
+button {
+  background: #6DA9E4;
+  height: 100%;
+  font-size: 16px;
+  padding: 0 20px;
+  border-radius: 20px;
+  border: 2px solid black;
+  cursor: pointer;
+  outline: none;
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #6DA9E4;
+  border-bottom: 16px solid #6DA9E4;
+  width: 50px;
+  height: 50px;
+
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+section.data {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
+.loader {
+  display: none;
+}
+section.data p.def {
+  font-size: 20px;
+  line-height: 1.6;
+}
+.not_found {
+  color: red;
+}
+.suggested {
+  background: aquamarine;
+  padding: 2px 10px;
+  border-radius: 4px;
+  margin-right: 10px;
+  margin-top: 5px;
+  display: inline-block;
+}
+/* #foot{
+  padding: 10px;
+  background-color: #6DA9E4;
+  margin-top : 21%;
+  text-align: center;
+  height: 4em;
+} */
+.wrapper
+{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -60px;
+}
+.wrapper>*{
+  flex:1;
+}
+#foot{
+  display:flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items:center;
+  background-color: #6DA9E4;
+  height: 60px;
+  /* padding: 1em; */
+  /* margin-top: 20%; */
+}

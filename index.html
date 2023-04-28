@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dictionary App</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap" rel="stylesheet">
+
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/0997eac26d.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav>
+      <div class="container">
+        <h1 style="margin-top: 0px;">Dictionary App</h1>
+      </div>
+    </nav>
+
+    <div class="bodycon">
+
+    </div>
+    <section class="input container">
+      <h2>Search for any word <i class="fa fa-search"></i></h2>
+
+      <div class="form">
+        <div class="input">
+          <input type="text" placeholder="Type Here.." id="input" autocomplete="off" />
+          <button id="search">Search</button>
+        </div>
+      </div>
+    </section>
+    <section class="data container">
+      <span>
+        <!-- used for document.querySelector(".loader") -->
+        <div class="loader"></div>
+      </span>
+
+      <!-- //if there is an HTML element with a class attribute of "def", such as
+      <div class="def">, then the document.querySelector(".def") method will
+        select that element. -->
+      <p class="def"></p>
+      <div class="not_found"></div>
+    </section>
+  </div>
+  <!-- Footer -->
+  <section>
+    <footer id="foot">
+      <div class="emojis">
+        <i class="social-icons fa-brands fa-twitter"></i>
+        <i class="social-icons fa-brands fa-facebook"></i>
+        <i class="social-icons fa-brands fa-instagram"></i>
+        <i class="social-icons fa-solid fa-envelope"></i>
+      </div>
+      <p>© Made by Aditya Vatsya</p>
+
+    </footer>
+  </section>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
