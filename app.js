@@ -3,6 +3,7 @@ const btn = document.querySelector("#search");
 const notfound = document.querySelector(".not_found");
 const def = document.querySelector(".def");
 const loading = document.querySelector(".loader");
+const heading = document.querySelector(".heading");
 
 //When button is clicked
 btn.addEventListener("click", function (e) {
@@ -32,20 +33,6 @@ async function getData(word) {
     loading.style.display = "none";
     notfound.innerText = "No Result Found";
     return;
-  }
-
-  //If result is suggestion
-  if (typeof data[0] === "string") {
-    loading.style.display = "none";
-    const heading = document.createElement("h4");
-    heading.innerHTML = "Did you mean?";
-    notfound.appendChild(heading);
-    data.forEach((element) => {
-      const suggestion = document.createElement("span");
-      suggestion.classList.add("suggested");
-      suggestion.innerHTML = element;
-      notfound.appendChild(suggestion);
-    });
   }
 
   //If result is Found

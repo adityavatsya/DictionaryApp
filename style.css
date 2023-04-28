@@ -96,21 +96,6 @@ section.data p.def {
 .not_found {
   color: red;
 }
-.suggested {
-  background: aquamarine;
-  padding: 2px 10px;
-  border-radius: 4px;
-  margin-right: 10px;
-  margin-top: 5px;
-  display: inline-block;
-}
-/* #foot{
-  padding: 10px;
-  background-color: #6DA9E4;
-  margin-top : 21%;
-  text-align: center;
-  height: 4em;
-} */
 .wrapper
 {
   min-height: 100%;
@@ -128,6 +113,4 @@ section.data p.def {
   align-items:center;
   background-color: #6DA9E4;
   height: 60px;
-  /* padding: 1em; */
-  /* margin-top: 20%; */
 }
